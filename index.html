@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+ <title>Assignment</title>
+ <!-- font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+ <!-- plugin -->
+ <link rel="stylesheet" href="assets/css/bootstrap.css" />
+ <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+ <!----css3---->
+ <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body>
+
+ <div class="container">
+  <main class="py-5">
+   <h4 class="mb-3 text-secondary-emphasis">একক উপকারভোগী নিবন্ধন</h4>
+   <form class="needs-validation bg-white shadow-sm" novalidate>
+    <div class="px-4 pt-4">
+     <h5 class="mb-3 text-secondary section-title">উপকারভোগীর বর্তমান ঠিকানা</h5>
+     <div class="row g-3 mb-3">
+      <div class="col-md-4">
+       <label for="addressType" class="form-label fw-bold">ঠিকানার ধরণ <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="addressType" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ঢাকা">ঢাকা</option>
+        <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid address type.
+       </div>
+      </div>
+     </div>
+
+     <div class="row g-3 mb-3">
+      <div class="col-md-4">
+       <label for="division" class="form-label fw-bold">বিভাগ <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="division" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ঢাকা">ঢাকা</option>
+        <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid division.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="zilla" class="form-label fw-bold">জেলা <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="zilla" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ঢাকা">ঢাকা</option>
+        <option value="কুমিল্লা">কুমিল্লা</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid zilla.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="upzilla" class="form-label fw-bold">উপজেলা/সিটি কর্পোরেশন <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="upzilla" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ঢাকা">ঢাকা</option>
+        <option value="গাজীপুর">গাজীপুর</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid upzilla.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="ward" class="form-label fw-bold">ইউনিয়ন/পৌরসভা/ওয়ার্ড <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="ward" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ঢাকা">ঢাকা</option>
+        <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid ward.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="road" class="form-label fw-bold">ওয়ার্ড/রাস্তা/মহল্লা <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="road" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ঢাকা">ঢাকা</option>
+        <option value="কুমিল্লা">কুমিল্লা</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid road.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="memberType" class="form-label fw-bold">সদস্যের ধরণ <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="memberType" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="সাধারণ সদস্য">সাধারণ সদস্য</option>
+        <option value="প্রতিষ্ঠাতা সদস্য">প্রতিষ্ঠাতা সদস্য</option>
+       </select>
+       <div class="invalid-feedback">
+        Please select a valid member type.
+       </div>
+      </div>
+
+     </div>
+
+
+     <h5 class="mb-3 mt-5  text-secondary section-title">উপকারভোগীর তথ্য</h5>
+     <div class="row g-3 mb-3">
+      <div class="col-md-4">
+       <label for="gender" class="form-label fw-bold">উপকারভোগীর লিঙ্গ <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="gender" required>
+        <option value="পুরুষ">পুরুষ</option>
+        <option value="মহিলা">মহিলা</option>
+       </select>
+      </div>
+
+      <div class="col-md-4">
+       <label for="beneficiary" class="form-label fw-bold">উপকারভোগীর নাম <span class="text-danger">*</span></label>
+       <input type="text" class="form-control" id="beneficiary" placeholder="" value="" required>
+       <div class="invalid-feedback">
+        Valid Beneficiary is required.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="marriedStatus" class="form-label fw-bold">উপকারভোগীর বৈবাহিক অবস্থা <span
+         class="text-danger">*</span></label>
+       <select class="form-select" name="marriedStatus" required>
+        <option value="বিবাহিত">বিবাহিত</option>
+        <option value="অবিবাহিত">অবিবাহিত </option>
+       </select>
+       <div class="invalid-feedback">
+        Valid Married Status is required.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="nidnumber" class="form-label fw-bold">উপকারভোগীর জাতীয় পরিচয় পত্র নম্বর <span
+         class="text-danger">*</span></label>
+       <input type="text" class="form-control" id="nidnumber" placeholder="" value="" required>
+       <div class="invalid-feedback">
+        Valid NID is required.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="address-type" class="form-label fw-bold">উপকারভোগীর জন্ম তারিখ<span
+         class="text-danger">*</span></label>
+       <div class="row g-3">
+        <div class="col-md-4">
+         <select class="select2 w-100" name="day" required>
+          <option value="">দিন</option>
+          <option value="1">১</option>
+          <option value="2">২</option>
+          <option value="3">৩</option>
+          <option value="4">৪</option>
+          <option value="5">৫</option>
+          <option value="6">৬</option>
+          <option value="7">৭</option>
+          <option value="8">৮</option>
+          <option value="9">৯</option>
+          <option value="10">১০</option>
+          <option value="11">১১</option>
+          <option value="12">১২</option>
+          <option value="13">১৩</option>
+          <option value="14">১৪</option>
+          <option value="15">১৫</option>
+          <option value="16">১৬</option>
+          <option value="17">১৭</option>
+          <option value="18">১৮</option>
+          <option value="19">১৯</option>
+          <option value="20">২০</option>
+          <option value="21">২১</option>
+          <option value="22">২২</option>
+          <option value="23">২৩</option>
+          <option value="24">২৪</option>
+          <option value="25">২৫</option>
+          <option value="26">২৬</option>
+          <option value="27">২৭</option>
+          <option value="28">২৮</option>
+          <option value="29">২৯</option>
+          <option value="30">৩০</option>
+         </select>
+         <div class="invalid-feedback">
+          Day required.
+         </div>
+        </div>
+        <div class="col-md-4">
+         <select class="select2 w-100" name="month" required>
+          <option value="">মাস</option>
+          <option value="জানুয়ারি">জানুয়ারি</option>
+          <option value="ফেব্রুয়ারি">ফেব্রুয়ারি</option>
+          <option value="মার্চ">মার্চ</option>
+          <option value="এপ্রিল">এপ্রিল</option>
+          <option value="মে">মে</option>
+          <option value="জুন">জুন</option>
+          <option value="জুলাই">জুলাই</option>
+          <option value="অগাস্ট">অগাস্ট</option>
+          <option value="সেপ্টেম্বর">সেপ্টেম্বর</option>
+          <option value="অক্টোবর">অক্টোবর</option>
+          <option value="নভেম্বর">নভেম্বর</option>
+          <option value="ডিসেম্বর">ডিসেম্বর</option>
+         </select>
+         <div class="invalid-feedback">
+          month required.
+         </div>
+        </div>
+        <div class="col-md-4">
+         <select class="select2 w-100" name="year" required>
+          <option value="">বছর</option>
+          <option value="১৯৯০">১৯৯০</option>
+          <option value="১৯৯১">১৯৯১</option>
+          <option value="১৯৯২">১৯৯২</option>
+          <option value="১৯৯৩">১৯৯৩</option>
+          <option value="১৯৯৪">১৯৯৪</option>
+          <option value="১৯৯৫">১৯৯৫</option>
+          <option value="১৯৯৬">১৯৯৬</option>
+          <option value="১৯৯৭">১৯৯৭</option>
+          <option value="১৯৯৮">১৯৯৮</option>
+          <option value="১৯৯৯">১৯৯৯</option>
+          <option value="২০০০">২০০০</option>
+          <option value="২০০১">২০০১</option>
+          <option value="২০০২">২০০২</option>
+          <option value="২০০৩">২০০৩</option>
+          <option value="২০০৪">২০০৪</option>
+          <option value="২০০৫">২০০৫</option>
+          <option value="২০০৬">২০০৬</option>
+          <option value="২০০৭">২০০৭</option>
+          <option value="২০০৮">২০০৮</option>
+          <option value="২০০৯">২০০৯</option>
+          <option value="২০১০">২০১০</option>
+          <option value="২০১১">২০১১</option>
+          <option value="২০১২">২০১২</option>
+          <option value="২০১৩">২০১৩</option>
+          <option value="২০১৪">২০১৪</option>
+          <option value="২০১৫">২০১৫</option>
+          <option value="২০১৬">২০১৬</option>
+          <option value="২০১৭">২০১৭</option>
+          <option value="২০১৮">২০১৮</option>
+          <option value="২০১৯">২০১৯</option>
+          <option value="২০২০">২০২০</option>
+          <option value="২০২১">২০২১</option>
+          <option value="২০২২">২০২২</option>
+          <option value="২০২৩">২০২৩</option>
+          <option value="২০২৪">২০২৪</option>
+         </select>
+         <div class="invalid-feedback">
+          Year required.
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="mobileNumber" class="form-label fw-bold">উপকারভোগীর মোবাইল নম্বর <span
+         class="text-danger">*</span></label>
+       <input type="text" class="form-control" id="mobileNumber" placeholder="" value="" required>
+       <div class="invalid-feedback">
+        Valid mobile number is required.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="occuption" class="form-label fw-bold">উপকারভোগীর পেশা <span class="text-danger">*</span></label>
+       <select class="select2 w-100" name="occuption" required>
+        <option value="">নির্বাচন করুন</option>
+        <option value="ডাক্তার">ডাক্তার</option>
+        <option value="শিক্ষক ">শিক্ষক </option>
+        <option value="প্রকৌশলী ">প্রকৌশলী </option>
+        <option value="ব্যাংক কর্মকর্তা">ব্যাংক কর্মকর্তা</option>
+        <option value="চিকিৎসক ">চিকিৎসক </option>
+       </select>
+       <div class="invalid-feedback">
+        Valid Occuption is required.
+       </div>
+      </div>
+
+      <div class="col-md-4">
+       <label for="fileUpload" class="form-label fw-bold">উপকারভোগীর ছবি</label>
+       <input type="file" class="form-control" id="fileUpload" placeholder="" value="">
+      </div>
+     </div>
+
+
+     <h5 class="mb-3 mt-5  text-secondary section-title">উপকারভোগীর অন্যান্য তথ্য</h5>
+
+     <div class="row g-3 mb-3">
+      <div class="col-md-4">
+       <label for="wifeName" class="form-label fw-bold">স্ত্রীর নাম</label>
+       <input type="text" class="form-control" id="wifeName" placeholder="" value="">
+
+      </div>
+
+      <div class="col-md-4">
+       <label for="wifeNidNumber" class="form-label fw-bold">স্ত্রীর এনআইডি নম্বর</label>
+       <input type="text" class="form-control" id="wifeNidNumber" placeholder="" value="">
+       <div class="invalid-feedback">
+        Valid last name is required.
+       </div>
+      </div>
+      <div class="col-md-4">
+       <label for="address-type" class="form-label fw-bold">স্ত্রীর জন্ম তারিখ</label>
+       <div class="row g-3">
+        <div class="col-md-4">
+         <select class="select2 w-100" name="day">
+          <option value="">দিন</option>
+          <option value="1">১</option>
+          <option value="2">২</option>
+          <option value="3">৩</option>
+          <option value="4">৪</option>
+          <option value="5">৫</option>
+          <option value="6">৬</option>
+          <option value="7">৭</option>
+          <option value="8">৮</option>
+          <option value="9">৯</option>
+          <option value="10">১০</option>
+          <option value="11">১১</option>
+          <option value="12">১২</option>
+          <option value="13">১৩</option>
+          <option value="14">১৪</option>
+          <option value="15">১৫</option>
+          <option value="16">১৬</option>
+          <option value="17">১৭</option>
+          <option value="18">১৮</option>
+          <option value="19">১৯</option>
+          <option value="20">২০</option>
+          <option value="21">২১</option>
+          <option value="22">২২</option>
+          <option value="23">২৩</option>
+          <option value="24">২৪</option>
+          <option value="25">২৫</option>
+          <option value="26">২৬</option>
+          <option value="27">২৭</option>
+          <option value="28">২৮</option>
+          <option value="29">২৯</option>
+          <option value="30">৩০</option>
+         </select>
+
+        </div>
+        <div class="col-md-4">
+         <select class="select2 w-100" name="month">
+          <option value="">মাস</option>
+          <option value="জানুয়ারি">জানুয়ারি</option>
+          <option value="ফেব্রুয়ারি">ফেব্রুয়ারি</option>
+          <option value="মার্চ">মার্চ</option>
+          <option value="এপ্রিল">এপ্রিল</option>
+          <option value="মে">মে</option>
+          <option value="জুন">জুন</option>
+          <option value="জুলাই">জুলাই</option>
+          <option value="অগাস্ট">অগাস্ট</option>
+          <option value="সেপ্টেম্বর">সেপ্টেম্বর</option>
+          <option value="অক্টোবর">অক্টোবর</option>
+          <option value="নভেম্বর">নভেম্বর</option>
+          <option value="ডিসেম্বর">ডিসেম্বর</option>
+         </select>
+
+        </div>
+        <div class="col-md-4">
+         <select class="select2 w-100" name="year">
+          <option value="">বছর</option>
+          <option value="১৯৯০">১৯৯০</option>
+          <option value="১৯৯১">১৯৯১</option>
+          <option value="১৯৯২">১৯৯২</option>
+          <option value="১৯৯৩">১৯৯৩</option>
+          <option value="১৯৯৪">১৯৯৪</option>
+          <option value="১৯৯৫">১৯৯৫</option>
+          <option value="১৯৯৬">১৯৯৬</option>
+          <option value="১৯৯৭">১৯৯৭</option>
+          <option value="১৯৯৮">১৯৯৮</option>
+          <option value="১৯৯৯">১৯৯৯</option>
+          <option value="২০০০">২০০০</option>
+          <option value="২০০১">২০০১</option>
+          <option value="২০০২">২০০২</option>
+          <option value="২০০৩">২০০৩</option>
+          <option value="২০০৪">২০০৪</option>
+          <option value="২০০৫">২০০৫</option>
+          <option value="২০০৬">২০০৬</option>
+          <option value="২০০৭">২০০৭</option>
+          <option value="২০০৮">২০০৮</option>
+          <option value="২০০৯">২০০৯</option>
+          <option value="২০১০">২০১০</option>
+          <option value="২০১১">২০১১</option>
+          <option value="২০১২">২০১২</option>
+          <option value="২০১৩">২০১৩</option>
+          <option value="২০১৪">২০১৪</option>
+          <option value="২০১৫">২০১৫</option>
+          <option value="২০১৬">২০১৬</option>
+          <option value="২০১৭">২০১৭</option>
+          <option value="২০১৮">২০১৮</option>
+          <option value="২০১৯">২০১৯</option>
+          <option value="২০২০">২০২০</option>
+          <option value="২০২১">২০২১</option>
+          <option value="২০২২">২০২২</option>
+          <option value="২০২৩">২০২৩</option>
+          <option value="২০২৪">২০২৪</option>
+         </select>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <hr />
+    <div class="d-flex justify-content-end jus px-4 pb-3 d">
+     <button class="btn btn-success" type="submit">
+      দাখিল করুন</button>
+    </div>
+   </form>
+  </main>
+ </div>
+
+
+
+
+ <!-- Optional JavaScript -->
+ <script src="assets/js/jquery.js"></script>
+ <script src="assets/js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+ <script src="assets/js/scripts.js"></script>
+ <script>
+  /*Select 2*/
+  $(document).ready(function () {
+   $('.select2').select2();
+  });
+
+
+ </script>
+
+</body>
+
+</html>
